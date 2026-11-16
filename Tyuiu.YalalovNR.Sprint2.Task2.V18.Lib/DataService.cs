@@ -30,7 +30,7 @@ namespace Tyuiu.YalalovNR.Sprint2.Task2.V18.Lib
                 (y == 8 && x >= 5 && x <= 9) ||
 
                 
-                (y == 9 && x >= 8 && x <= 9) ||
+                (y == 9 && x >= 6 && x <= 9) ||
 
                 
                 (y == 10 && x >= 8 && x <= 9) ||

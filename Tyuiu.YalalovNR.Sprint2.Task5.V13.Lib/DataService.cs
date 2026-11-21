@@ -9,7 +9,8 @@ namespace Tyuiu.YalalovNR.Sprint2.Task5.V13.Lib
             int nextMonth = m;
             int nextYear = g;
 
-            int daysInMonth = 31; 
+            int daysInMonth = 31;
+
             switch (m)
             {
                 case 4:
@@ -25,17 +26,21 @@ namespace Tyuiu.YalalovNR.Sprint2.Task5.V13.Lib
                     daysInMonth = 31;
                     break;
             }
+
             if (nextDay > daysInMonth)
             {
-                nextDay = 1;       
-                nextMonth = m + 1; 
+                nextDay = 1;
+                nextMonth = m + 1;
+
                 if (nextMonth > 12)
                 {
-                    nextMonth = 1;     
-                    nextYear = g + 1;   
+                    nextMonth = 1;
+                    nextYear = g + 1;
                 }
             }
-            return $"{nextYear}, {nextMonth}, {nextDay}";
+
+            
+            return $"{nextDay:D2}.{nextMonth:D2}.{nextYear}";
         }
     }
 }
